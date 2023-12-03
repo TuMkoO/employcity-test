@@ -1,0 +1,271 @@
+@media (min-width: 320px) {
+  .container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+}
+@media (min-width: 360px) {
+}
+@media (min-width: 376px) {
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 552px;
+    padding: 0;
+  }
+
+  .order .form-select__options {
+    .btn-mobile-close {
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1172px;
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  :root {
+    --step-size: 75px;
+  }
+
+  .order .step {
+    min-width: 190px;
+    margin-right: 0;
+    &::after {
+      right: -55px;
+    }
+  }
+
+  .order .step-text {
+    max-width: 160px;
+  }
+
+  .footer-item:first-child {
+    width: 100%;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .btn-menu {
+    display: flex;
+  }
+  .btn-mobile-close {
+    display: block;
+  }
+  .menu-container {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    background: #ffffff;
+    left: 0;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    z-index: 6;
+  }
+  .menu-container.opened {
+    transform: translateX(0);
+  }
+
+  .menu {
+    padding: 0;
+    margin-top: 40px;
+    flex-direction: column;
+    &-item {
+      margin-right: 0;
+      margin-top: 20px;
+    }
+    &-link {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+  }
+
+  .order__steps {
+    overflow: auto;
+    justify-content: start;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-item::after {
+    display: none;
+  }
+  .footer-item:last-child {
+    margin-right: 0;
+  }
+  .footer-item:first-child {
+    margin-left: 0;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .header {
+    background-color: rgba(16, 16, 29, 1);
+  }
+  .header-container {
+    height: 80px;
+  }
+
+  .content-title {
+    font-size: 36px;
+  }
+
+  .order-title {
+    font-size: 32px;
+  }
+
+  .order .form-col {
+    width: 100%;
+  }
+
+  .order .form-range-label {
+    text-wrap: wrap;
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .menu-container {
+    max-width: 100%;
+  }
+
+  .order .form-select__options {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    color: #000000;
+    background: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .slide-enter-from {
+    transform: translateX(-100%);
+  }
+  .slide-enter-to {
+    transform: translateX(0);
+  }
+
+  .slide-leave-active {
+    transition: all 0.3s;
+  }
+  .slide-leave-to {
+    transform: translateX(-100%);
+  }
+
+  .order .form-select .options-wrapper {
+    width: 100%;
+    max-height: 80vh;
+  }
+  .order .form-select .options-item {
+    text-align: center;
+  }
+
+  .select-open {
+    overflow: hidden;
+  }
+}
+
+//
+@media (max-width: 480px) {
+  .content-title {
+    font-size: 24px;
+  }
+  .content-text {
+    font-size: 18px;
+  }
+  .content-list {
+    font-size: 16px;
+  }
+  .order-title {
+    font-size: 22px;
+  }
+  .order-subtitle {
+    font-size: 16px;
+  }
+  .footer .list {
+    flex-direction: column;
+  }
+  .footer .list-item {
+    margin: 15px 0;
+  }
+}
+
+//
+@media (max-width: 414px) {
+  .banner {
+    height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+//
+@media (max-width: 375px) {
+  .menu {
+    justify-content: center;
+    margin-top: -20px;
+  }
+}
+
+//
+@media (max-width: 360px) {
+  .banner {
+    padding: 100px 0 20px 0;
+    align-items: center;
+  }
+
+  .content-title,
+  .content-list {
+    margin-bottom: 50px;
+  }
+}
+
+//
+@media (max-width: 320px) {
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Lato"),
+    /* Если не получилось, загрузит ttf */ url("../fonts/Lato-Regular.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Lato"),
+    /* Если не получилось, загрузит ttf */ url("../fonts/Lato-SemiBold.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Lato"),
+    /* Если не получилось, загрузит ttf */ url("../fonts/Lato-Bold.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Lato"),
+    /* Если не получилось, загрузит ttf */ url("../fonts/Lato-Black.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 800;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Raleway"),
+    /* Если не получилось, загрузит ttf */ url("../fonts/Raleway-ExtraBold.ttf")
+      format("truetype");
+}
