@@ -552,6 +552,7 @@
     padding: 0;
     display: flex;
     &-item {
+      display: flex;
       margin: 0 20px;
     }
     &-link {
